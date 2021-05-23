@@ -21,9 +21,9 @@ export class PersonneComponent implements OnInit {
   }
 
   reloadData(){
-    // this.personneService.getAllPersons().subscribe(data => {
-    //   this.personnes = data;
-    // });
+    this.personneService.getAllPersons().subscribe(data => {
+      this.personnes = data;
+    });
 
     // Utilisation du resolver PersonResolver
     // this.route.data.subscribe(data => {
